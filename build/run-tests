@@ -1,0 +1,4 @@
+#!/bin/bash
+
+echo "Launching JUnit test runner ..."
+java -jar ../lib/junit-platform-console-standalone-1.13.3.jar -cp ../bin --scan-class-path
