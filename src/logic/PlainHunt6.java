@@ -6,6 +6,6 @@ public class PlainHunt6 implements Composition {
     }
 
     public int [] currentRow() {
-        return new int[] {};
+        return new int[] {1, 2, 3, 4, 5, 6};
     }
 }
