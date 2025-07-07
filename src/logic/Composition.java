@@ -2,7 +2,9 @@ package logic;
 
 public interface Composition {
 
-    void change();
+    void change(Band band);
 
     Row currentRow();
+
+    int stage();
 }
