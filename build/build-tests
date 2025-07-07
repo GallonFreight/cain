@@ -4,4 +4,4 @@
 
 echo "Building test suite ..."
 javac -d ../bin -cp ../lib/junit-platform-console-standalone-1.13.3.jar ../src/test/* ../src/logic/*
-echo "Test suite built"
+echo "Build complete"
