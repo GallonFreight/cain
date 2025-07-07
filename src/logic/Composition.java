@@ -4,5 +4,5 @@ public interface Composition {
 
     void change();
 
-    int[] currentRow();
+    Row currentRow();
 }
