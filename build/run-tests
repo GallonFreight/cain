@@ -1,4 +1,8 @@
 #!/bin/bash
 
 echo "Launching JUnit test runner ..."
-java -jar ../lib/junit-platform-console-standalone-1.13.3.jar -cp ../bin --scan-class-path
+java -jar ../lib/junit-platform-console-standalone-1.13.3.jar execute -cp ../bin --scan-class-path --single-color --disable-ansi-colors --disable-banner | less
+
+#TODO: strip lines ending ".java:<number>)" from JUnit output so output is not swamped by stacktraces, and send those lines to a log file instead
+
+echo "Done"
