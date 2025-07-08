@@ -1,12 +1,22 @@
 package logic;
 
-import java.util.Collection;
+import java.util.*;
+import ui.Interface;
 
-public class ConcreteRow implements Row {
+public class ZeroIndexedRow implements Row {
 
+    private final Interface ui;
     private int[] order;
 
-    public ConcreteRow(int[] initialOrder) {
+    /**
+     * @param initialOrder:
+     * the permutation in which the bells start: zero-indexed
+     * i.e. the treble is at the position labelled 0,
+     * the position of the second is labelled 1, etc.
+     *
+     */
+    public ZeroIndexedRow(Interface ui, int[] initialOrder) {
+        this.ui = ui;
         order = initialOrder;
     }
 
@@ -22,8 +32,11 @@ public class ConcreteRow implements Row {
         }
     }
 
-    public void ring(Ringer[] ringers) {
-
+    public void ring(List<Ringer> ringers) {
+        for (int i : order) {
+            ringers.get(i).ring();
+        }
+        ui.startNewRow();
     }
 
     private void swap(int index) {

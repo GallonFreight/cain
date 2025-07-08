@@ -10,4 +10,6 @@ public interface Interface {
 
     void display(char symbol);
 
+    void startNewRow();
+
 }
