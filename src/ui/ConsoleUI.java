@@ -2,6 +2,12 @@ package ui;
 
 import logic.Call;
 
+/**
+ * Interface implementation that displays each row
+ * as a sequence of each bell's symbol, in order
+ * on a new line of console output
+ *
+ */
 public class ConsoleUI implements Interface {
 
     public void call(Call call) {

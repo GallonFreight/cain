@@ -10,6 +10,12 @@ public class PlaceNotationComposition implements Composition {
     private final Row row;
     private int changeNumber;
 
+    /**
+     * @param changes: a sequence of sets, each representing a change.
+     * The members of each set are the numbers which would appear in the place
+     * notation for the corresponding change
+     *
+     */
     public PlaceNotationComposition(
                                int stage,
                                List<Collection<Integer>> changes,

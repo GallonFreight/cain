@@ -2,6 +2,11 @@ package ui;
 
 import logic.Call;
 
+/**
+ * Interface provides methods to output sound and images
+ * that represent bells striking and conductors calling
+ *
+ */
 public interface Interface {
 
     void call(Call call);

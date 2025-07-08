@@ -2,6 +2,10 @@ package logic;
 
 import ui.Interface;
 
+/**
+ * Bell implementation that triggers no audio output
+ *
+ */
 public class SilentBell implements Bell {
 
     private final Interface ui;
